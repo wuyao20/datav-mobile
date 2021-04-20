@@ -1,12 +1,15 @@
 <template>
   <div>
-    school
+    <van-button type="primary" @click="test">primary</van-button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'index'
+  name: 'index',
+  methods: {
+    test () {}
+  }
 }
 </script>
 

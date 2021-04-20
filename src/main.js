@@ -11,6 +11,11 @@ Vue.use(Vant)
 Vue.config.productionTip = false
 Vue.prototype.$echarts = ECharts
 
+if (process.env.NODE_ENV === 'production') {
+  const { mockXHR } = require('../mock')
+  mockXHR()
+}
+
 new Vue({
   router,
   store,
