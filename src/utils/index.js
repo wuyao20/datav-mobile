@@ -42,6 +42,7 @@ export function parseTime (time, cFormat) {
     s: date.getSeconds(),
     a: date.getDay()
   }
+  /* eslint-disable-next-line */
   const time_str = format.replace(/{([ymdhisa])+}/g, (result, key) => {
     const value = formatObj[key]
     // Note: getDay() returns 0 on Sunday
@@ -50,6 +51,7 @@ export function parseTime (time, cFormat) {
     }
     return value.toString().padStart(2, '0')
   })
+  /* eslint-disable-next-line */
   return time_str
 }
 

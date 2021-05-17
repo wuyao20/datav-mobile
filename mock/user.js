@@ -48,7 +48,7 @@ module.exports = [
 
   // get user info
   {
-    url: '/vue-admin-template/user/info\.*',
+    url: '/vue-admin-template/user/info',
     type: 'get',
     response: config => {
       const { token } = config.query
@@ -86,24 +86,24 @@ module.exports = [
     type: 'post',
     response: config => {
       return {
-        'msg': '登录成功',
-        'success': true,
-        'obj': {
-          'userId': 3,
-          'userUuid': '1be368247fa911eb8777fcb3bc93041c',
-          'userLoginName': 'demoData',
-          'userLoginPassword': 'demoData',
-          'userName': 'demoData',
-          'userPhone': 'demoData',
-          'userArea': 'demoData',
-          'userGrid': 'demoData',
-          'userJobNumber': 'demoData',
-          'userDepartmentUuid': 'demoData',
-          'userSign': true,
-          'userJurisdictionUuid': '26ddd7d59d8f11ebafaefcb3bc93041c',
-          'userRoleUuid': 'demoData',
-          'createTime': '2021-03-08',
-          'updateTime': '2021-04-15'
+        msg: '登录成功',
+        success: true,
+        obj: {
+          userId: 3,
+          userUuid: '1be368247fa911eb8777fcb3bc93041c',
+          userLoginName: 'demoData',
+          userLoginPassword: 'demoData',
+          userName: 'demoData',
+          userPhone: 'demoData',
+          userArea: 'demoData',
+          userGrid: 'demoData',
+          userJobNumber: 'demoData',
+          userDepartmentUuid: 'demoData',
+          userSign: true,
+          userJurisdictionUuid: '26ddd7d59d8f11ebafaefcb3bc93041c',
+          userRoleUuid: 'demoData',
+          createTime: '2021-03-08',
+          updateTime: '2021-04-15'
         }
       }
     }
@@ -115,23 +115,23 @@ module.exports = [
     type: 'get',
     response: config => {
       return {
-        'msg': '查询成功',
-        'success': true,
-        'obj': {
-          'userId': 3,
-          'userUuid': '1be368247fa911eb8777fcb3bc93041c',
-          'userLoginName': 'demoData',
-          'userLoginPassword': 'demoData',
-          'userName': 'demoData',
-          'userPhone': 'demoData',
-          'userArea': 'demoData',
-          'userGrid': 'demoData',
-          'userJobNumber': 'demoData',
-          'userDepartmentUuid': 'demoData',
-          'userSign': true,
-          'userRoleUuid': 'demoData',
-          'createTime': '2021-03-08',
-          'updateTime': '2021-03-08'
+        msg: '查询成功',
+        success: true,
+        obj: {
+          userId: 3,
+          userUuid: '1be368247fa911eb8777fcb3bc93041c',
+          userLoginName: 'demoData',
+          userLoginPassword: 'demoData',
+          userName: 'demoData',
+          userPhone: 'demoData',
+          userArea: 'demoData',
+          userGrid: 'demoData',
+          userJobNumber: 'demoData',
+          userDepartmentUuid: 'demoData',
+          userSign: true,
+          userRoleUuid: 'demoData',
+          createTime: '2021-03-08',
+          updateTime: '2021-03-08'
         }
       }
     }
@@ -142,34 +142,34 @@ module.exports = [
     response: config => {
       return [
         {
-          'jurisdictionId': 1,
-          'jurisdictionUuid': '8656dd9c9d8e11ebafaefcb3bc93041c',
-          'jurisdictionName': 'personal',
-          'jurisdictionExplain': '个人级'
+          jurisdictionId: 1,
+          jurisdictionUuid: '8656dd9c9d8e11ebafaefcb3bc93041c',
+          jurisdictionName: 'personal',
+          jurisdictionExplain: '个人级'
         },
         {
-          'jurisdictionId': 2,
-          'jurisdictionUuid': 'a7b195939d8e11ebafaefcb3bc93041c',
-          'jurisdictionName': 'grid',
-          'jurisdictionExplain': '网格级'
+          jurisdictionId: 2,
+          jurisdictionUuid: 'a7b195939d8e11ebafaefcb3bc93041c',
+          jurisdictionName: 'grid',
+          jurisdictionExplain: '网格级'
         },
         {
-          'jurisdictionId': 3,
-          'jurisdictionUuid': 'ebefd57a9d8e11ebafaefcb3bc93041c',
-          'jurisdictionName': 'line',
-          'jurisdictionExplain': '条线级'
+          jurisdictionId: 3,
+          jurisdictionUuid: 'ebefd57a9d8e11ebafaefcb3bc93041c',
+          jurisdictionName: 'line',
+          jurisdictionExplain: '条线级'
         },
         {
-          'jurisdictionId': 4,
-          'jurisdictionUuid': '195ba0879d8f11ebafaefcb3bc93041c',
-          'jurisdictionName': 'leader',
-          'jurisdictionExplain': '领导级'
+          jurisdictionId: 4,
+          jurisdictionUuid: '195ba0879d8f11ebafaefcb3bc93041c',
+          jurisdictionName: 'leader',
+          jurisdictionExplain: '领导级'
         },
         {
-          'jurisdictionId': 5,
-          'jurisdictionUuid': '26ddd7d59d8f11ebafaefcb3bc93041c',
-          'jurisdictionName': 'admin',
-          'jurisdictionExplain': '管理级'
+          jurisdictionId: 5,
+          jurisdictionUuid: '26ddd7d59d8f11ebafaefcb3bc93041c',
+          jurisdictionName: 'admin',
+          jurisdictionExplain: '管理级'
         }
       ]
     }
@@ -179,10 +179,10 @@ module.exports = [
     type: 'get',
     response: config => {
       return {
-        'jurisdictionId': 2,
-        'jurisdictionUuid': 'a7b195939d8e11ebafaefcb3bc93041c',
-        'jurisdictionName': 'grid',
-        'jurisdictionExplain': '网格级'
+        jurisdictionId: 2,
+        jurisdictionUuid: 'a7b195939d8e11ebafaefcb3bc93041c',
+        jurisdictionName: 'grid',
+        jurisdictionExplain: '网格级'
       }
     }
   },
@@ -192,8 +192,8 @@ module.exports = [
     type: 'post',
     response: config => {
       return {
-        'success': true,
-        'numCount': 1
+        success: true,
+        numCount: 1
       }
     }
   },
@@ -202,37 +202,37 @@ module.exports = [
     type: 'get',
     response: config => {
       return {
-        'msg': '用户不存在',
-        'success': false,
-        'obj': {
-          'records': [
+        msg: '用户不存在',
+        success: false,
+        obj: {
+          records: [
             {
-              'userId': 3,
-              'userUuid': '1be368247fa911eb8777fcb3bc93041c',
-              'userLoginName': 'demoData',
-              'userLoginPassword': 'demoData',
-              'userName': 'demoData',
-              'userPhone': 'demoData',
-              'userArea': 'demoData',
-              'userGrid': 'demoData',
-              'userJobNumber': 'demoData',
-              'userDepartmentUuid': 'demoData',
-              'userSign': true,
-              'userRoleUuid': 'demoData',
-              'createTime': '2021-03-08',
-              'updateTime': '2021-03-08'
+              userId: 3,
+              userUuid: '1be368247fa911eb8777fcb3bc93041c',
+              userLoginName: 'demoData',
+              userLoginPassword: 'demoData',
+              userName: 'demoData',
+              userPhone: 'demoData',
+              userArea: 'demoData',
+              userGrid: 'demoData',
+              userJobNumber: 'demoData',
+              userDepartmentUuid: 'demoData',
+              userSign: true,
+              userRoleUuid: 'demoData',
+              createTime: '2021-03-08',
+              updateTime: '2021-03-08'
             }
           ],
-          'total': 1,
-          'size': 50,
-          'current': 1,
-          'orders': [],
-          'optimizeCountSql': true,
-          'hitCount': false,
-          'countId': null,
-          'maxLimit': null,
-          'searchCount': true,
-          'pages': 1
+          total: 1,
+          size: 50,
+          current: 1,
+          orders: [],
+          optimizeCountSql: true,
+          hitCount: false,
+          countId: null,
+          maxLimit: null,
+          searchCount: true,
+          pages: 1
         }
       }
     }
@@ -242,38 +242,38 @@ module.exports = [
     type: 'post',
     response: config => {
       return {
-        'msg': '查询成功',
-        'success': true,
-        'obj': {
-          'records': [
+        msg: '查询成功',
+        success: true,
+        obj: {
+          records: [
             {
-              'userId': 3,
-              'userUuid': '1be368247fa911eb8777fcb3bc93041c',
-              'userLoginName': 'demoData',
-              'userLoginPassword': 'demoData',
-              'userName': 'demoData',
-              'userPhone': 'demoData',
-              'userArea': 'demoData',
-              'userGrid': 'demoData',
-              'userJobNumber': 'demoData',
-              'userDepartmentUuid': 'demoData',
-              'userSign': true,
-              'userRoleUuid': 'demoData',
-              'createTime': '2021-03-08',
-              'departmentName': null,
-              'roleName': null
+              userId: 3,
+              userUuid: '1be368247fa911eb8777fcb3bc93041c',
+              userLoginName: 'demoData',
+              userLoginPassword: 'demoData',
+              userName: 'demoData',
+              userPhone: 'demoData',
+              userArea: 'demoData',
+              userGrid: 'demoData',
+              userJobNumber: 'demoData',
+              userDepartmentUuid: 'demoData',
+              userSign: true,
+              userRoleUuid: 'demoData',
+              createTime: '2021-03-08',
+              departmentName: null,
+              roleName: null
             }
           ],
-          'total': 1,
-          'size': 50,
-          'current': 1,
-          'orders': [],
-          'optimizeCountSql': true,
-          'hitCount': false,
-          'countId': null,
-          'maxLimit': null,
-          'searchCount': true,
-          'pages': 1
+          total: 1,
+          size: 50,
+          current: 1,
+          orders: [],
+          optimizeCountSql: true,
+          hitCount: false,
+          countId: null,
+          maxLimit: null,
+          searchCount: true,
+          pages: 1
         }
       }
     }
@@ -283,39 +283,39 @@ module.exports = [
     type: 'get',
     response: config => {
       return {
-        'msg': '查询成功',
-        'success': true,
-        'obj': {
-          'records': [
+        msg: '查询成功',
+        success: true,
+        obj: {
+          records: [
             {
-              'userId': 3,
-              'userUuid': '1be368247fa911eb8777fcb3bc93041c',
-              'userLoginName': 'demoData',
-              'userLoginPassword': 'demoData',
-              'userName': 'demoData',
-              'userPhone': 'demoData',
-              'userArea': 'demoData',
-              'userGrid': 'demoData',
-              'userJobNumber': 'demoData',
-              'userDepartmentUuid': 'demoData',
-              'jurisdictionUuid': '8656dd9c9d8e11ebafaefcb3bc93041c',
-              'userSign': true,
-              'userRoleUuid': 'demoData',
-              'createTime': '2021-03-08',
-              'departmentName': null, // 对应的部门名称
-              'roleName': null // 角色名称
+              userId: 3,
+              userUuid: '1be368247fa911eb8777fcb3bc93041c',
+              userLoginName: 'demoData',
+              userLoginPassword: 'demoData',
+              userName: 'demoData',
+              userPhone: 'demoData',
+              userArea: 'demoData',
+              userGrid: 'demoData',
+              userJobNumber: 'demoData',
+              userDepartmentUuid: 'demoData',
+              jurisdictionUuid: '8656dd9c9d8e11ebafaefcb3bc93041c',
+              userSign: true,
+              userRoleUuid: 'demoData',
+              createTime: '2021-03-08',
+              departmentName: null, // 对应的部门名称
+              roleName: null // 角色名称
             }
           ],
-          'total': 1,
-          'size': 50,
-          'current': 1,
-          'orders': [],
-          'optimizeCountSql': true,
-          'hitCount': false,
-          'countId': null,
-          'maxLimit': null,
-          'searchCount': true,
-          'pages': 1
+          total: 1,
+          size: 50,
+          current: 1,
+          orders: [],
+          optimizeCountSql: true,
+          hitCount: false,
+          countId: null,
+          maxLimit: null,
+          searchCount: true,
+          pages: 1
         }
       }
     }
@@ -325,15 +325,15 @@ module.exports = [
     type: 'get',
     response: config => {
       return {
-        'msg': '成功',
-        'success': true,
-        'obj': {
-          'roleId': 2,
-          'roleUuid': 'adebe9a080b811eb995dfcb3bc93041c',
-          'roleName': '管理员',
-          'roleContent': 'admin|用户增加|用户删除|用户更新|单用户查询|用户列表|角色增加|角色删除|角色更新|单角色查询|角色列表|部门增加|部门删除|部门更新|单部门查询|部门列表|任务增加|任务删除|任务更新|单权限查询|权限列表|订单整体情况|整体质态情况',
-          'createTime': '2021-03-09',
-          'updateTime': '2021-04-19'
+        msg: '成功',
+        success: true,
+        obj: {
+          roleId: 2,
+          roleUuid: 'adebe9a080b811eb995dfcb3bc93041c',
+          roleName: '管理员',
+          roleContent: 'admin|用户增加|用户删除|用户更新|单用户查询|用户列表|角色增加|角色删除|角色更新|单角色查询|角色列表|部门增加|部门删除|部门更新|单部门查询|部门列表|任务增加|任务删除|任务更新|单权限查询|权限列表|订单整体情况|整体质态情况',
+          createTime: '2021-03-09',
+          updateTime: '2021-04-19'
         }
       }
     }

@@ -19,7 +19,7 @@ const routes = [
       {
         path: 'public',
         name: 'Public',
-        component: () => import('@/components/public/index')
+        component: () => import('@/components/public/Public')
       },
       {
         path: 'company',
@@ -42,6 +42,11 @@ const routes = [
     path: '/conversion',
     name: 'Conversion',
     component: () => import('@/components/commerce/conversion-rate/index')
+  },
+  {
+    path: '/monthDev',
+    name: 'monthDevPublic',
+    component: () => import('@/components/public/index')
   }
 ]
 
