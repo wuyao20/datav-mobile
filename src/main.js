@@ -7,6 +7,8 @@ import * as ECharts from 'echarts'
 import Vant from 'vant'
 import 'vant/lib/index.css'
 
+import '@/icons' // icon
+import '@/permission' // permission control
 Vue.use(Vant)
 Vue.config.productionTip = false
 Vue.prototype.$echarts = ECharts
