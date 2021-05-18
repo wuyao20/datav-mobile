@@ -53,7 +53,8 @@ router.beforeEach(async (to, from, next) => {
             type: 'danger',
             message: error || 'Has Error'
           })
-          next(`/login?redirect=${to.path}`)
+          // next(`/login?redirect=${to.path}`)
+          next('/login')
           NProgress.done()
         }
       }

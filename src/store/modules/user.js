@@ -27,6 +27,12 @@ const mutations = {
   },
   SET_ROLES: (state, roles) => {
     state.roles = roles
+  },
+  SET_GRID: (state, grid) => {
+    state.gird = grid
+  },
+  SET_AREA: (state, area) => {
+    state.area = area
   }
 }
 
@@ -73,6 +79,8 @@ const actions = {
         // }
         commit('SET_NAME', obj.userName)
         commit('SET_PHONE', obj.userPhone)
+        commit('SET_AREA', obj.userArea)
+        commit('SET_GRID', obj.userGrid)
         getMenu().then(res => {
           const { obj } = res
           const roleArray = obj.roleContent.split('|')

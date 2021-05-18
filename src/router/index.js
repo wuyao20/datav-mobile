@@ -32,9 +32,9 @@ const routes = [
         component: () => import('@/components/school/index')
       },
       {
-        path: 'commerce',
-        name: 'Commerce',
-        component: () => import('@/components/commerce/index')
+        path: 'mine',
+        name: 'mine',
+        component: () => import('@/views/mine/Mine')
       }
     ]
   },
@@ -42,6 +42,11 @@ const routes = [
     path: '/conversion',
     name: 'Conversion',
     component: () => import('@/components/commerce/conversion-rate/index')
+  },
+  {
+    path: '/thatDay',
+    name: 'thatDay',
+    component: () => import('@/components/commerce/thatDay/ThatDay')
   },
   {
     path: '/monthDev',

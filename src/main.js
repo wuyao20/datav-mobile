@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './styles/reset.css'
+import './styles/index.styl'
 import * as ECharts from 'echarts'
 import Vant from 'vant'
 import 'vant/lib/index.css'
@@ -18,10 +19,10 @@ Vue.use(ElementUI, { locale })
 Vue.config.productionTip = false
 Vue.prototype.$echarts = ECharts
 
-if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
-  mockXHR()
-}
+// if (process.env.NODE_ENV === 'production') {
+//   const { mockXHR } = require('../mock')
+//   mockXHR()
+// }
 
 new Vue({
   router,

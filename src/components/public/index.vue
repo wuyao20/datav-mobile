@@ -808,17 +808,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.app-container
-  height inherit
-  overflow scroll
-  .content
-    margin-bottom 10px
-    .el-table
-      .warning-cell
-        background-color rgba(235, 57, 5, 1)
-    .charts
-      display flex
-      flex-direction column
-      justify-content center
-      align-items center
+.content
+  margin-bottom 10px
+  .el-table
+    .warning-cell
+      background-color rgba(235, 57, 5, 1)
+  .charts
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
 </style>

@@ -12,7 +12,7 @@
         </template>
         <span>校园</span>
       </van-tabbar-item>
-      <van-tabbar-item replace to="/mine" name="mine">
+      <van-tabbar-item replace to="/home/mine" name="mine">
         <template>
           <div class="van-tabbar-item__icon iconfont icon-wode"></div>
         </template>
