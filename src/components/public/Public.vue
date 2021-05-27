@@ -31,6 +31,13 @@
           自营
         </div>
       </van-grid-item>
+      <van-grid-item @click="fiveGenClick">
+        <div class="van-tabbar-item__icon iconfont icon-5G">
+        </div>
+        <div class="content">
+          5G登网
+        </div>
+      </van-grid-item>
     </van-grid>
     <van-action-sheet v-model="publicShow" :actions="publicActions" cancel-text="取消" close-on-click-action description="公众报表" @select="onPublicActions" />
     <van-action-sheet v-model="commerceShow" :actions="commerceActions" cancel-text="取消" close-on-click-action description="电商报表" @select="onCommerceActions" />
@@ -38,13 +45,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import { notify } from '@/utils'
+
 export default {
   name: 'Public',
   data () {
     return {
       publicShow: false,
       publicActions: [
-        { name: '公众当月整体发展', key: 1 }
+        { name: '公众当月整体发展', key: 1 },
+        { name: '大公众日发展报表', key: 2 }
       ],
       commerceShow: false,
       commerceActions: [
@@ -53,9 +64,32 @@ export default {
       ]
     }
   },
+  computed: {
+    ...mapGetters([
+      'roles'
+    ])
+  },
   methods: {
+    gridCommerceClick () {
+      if (this.roles.indexOf('commerce') > -1) {
+        this.commerceShow = true
+      } else {
+        notify('您无权访问此菜单', false)
+      }
+    },
+    fiveGenClick () {
+      if (this.roles.indexOf('5G') > -1) {
+        this.$router.push({ path: '/5g' })
+      } else {
+        notify('您无权访问此菜单', false)
+      }
+    },
     gridPublicClick () {
-      this.publicShow = true
+      if (this.roles.indexOf('whole') > -1 || this.roles.indexOf('dayDev') > -1) {
+        this.publicShow = true
+      } else {
+        notify('您无权访问此菜单', false)
+      }
     },
     onPublicActions (item) {
       this.publicShow = false
@@ -63,12 +97,12 @@ export default {
         case 1:
           this.$router.push({ path: '/monthDev' })
           break
+        case 2:
+          this.$router.push({ path: '/dayDev' })
+          break
         default:
           break
       }
-    },
-    gridCommerceClick () {
-      this.commerceShow = true
     },
     onCommerceActions (item) {
       this.commerceShow = false

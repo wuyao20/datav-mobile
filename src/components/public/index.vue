@@ -17,6 +17,7 @@
         :data="list"
         style="width: 100%; overflow: hidden;"
         :default-sort="{prop: 'noActivePercent', order: 'ascending'}"
+        size="mini"
       >
         <el-table-column label="区县" fixed="left" align="center" width="60">
           <template slot-scope="scope">

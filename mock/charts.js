@@ -4766,5 +4766,153 @@ module.exports = [
         ]
       }
     }
+  },
+  {
+    url: '/DayDevelopment/dayDevelopmentReport',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '成功',
+        success: false,
+        obj: [
+          {
+            area: '丰县',
+            onlineChannel: 12,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '沛县',
+            onlineChannel: 12,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '邳州',
+            onlineChannel: 13,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '开新',
+            onlineChannel: 14,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '铜山',
+            onlineChannel: 15,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '新沂',
+            onlineChannel: 16,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '泉山',
+            onlineChannel: 17,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '贾汪',
+            onlineChannel: 18,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '鼓楼',
+            onlineChannel: 11,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '睢宁',
+            onlineChannel: 20,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          },
+          {
+            area: '云龙',
+            onlineChannel: 30,
+            selfChannel: 10,
+            socIndex: 100,
+            selfIndex: 100,
+            onlineIndex: 100,
+            socChannel: 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    url: '/tempActive/FiveGLogin/add',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '添加成功',
+        success: true
+      }
+    }
+  },
+  {
+    url: '/tempActive/FiveGLogin/getList',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '没有数据',
+        success: true,
+        obj: [
+          {
+            id: 2, // 不显示
+            telNumber: '15651353855',
+            userUuid: '1be368247fa911eb8777fcb3bc93041c' // 不显示
+          }
+        ]
+      }
+    }
+  },
+  {
+    url: '/tempActive/FiveGLogin/del',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '删除成功',
+        success: true
+      }
+    }
   }
 ]

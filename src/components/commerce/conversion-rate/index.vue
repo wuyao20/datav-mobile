@@ -19,6 +19,7 @@
       style="width: 100%;"
       :default-sort="{prop: 'conversionRate', order: 'descending'}"
       :cell-style="tableCellStyle"
+      size="mini"
     >
 <!--      <el-table-column label="id" width="80px" align="center">-->
 <!--        <template slot-scope="scope">-->

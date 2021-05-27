@@ -101,3 +101,31 @@ export function updateAscription (data) {
     data
   })
 }
+
+export function dayDevelopment () {
+  return request({
+    url: '/DayDevelopment/dayDevelopmentReport',
+    method: 'get'
+  })
+}
+
+export function get5GList () {
+  return request({
+    url: '/tempActive/FiveGLogin/getList',
+    method: 'get'
+  })
+}
+
+export function delete5g (id) {
+  return request({
+    url: `/tempActive/FiveGLogin/del/${id}`,
+    method: 'get'
+  })
+}
+
+export function add5G (number) {
+  return request({
+    url: `/tempActive/FiveGLogin/add/${number}`,
+    method: 'get'
+  })
+}

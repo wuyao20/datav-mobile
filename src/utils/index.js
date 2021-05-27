@@ -2,6 +2,8 @@
  * Created by PanJiaChen on 16/11/18.
  */
 
+import { Notify } from 'vant'
+
 /**
  * Parse the time to string
  * @param {(Object|string|number)} time
@@ -127,4 +129,18 @@ export function getPercent (num, total) {
     return '-'
   }
   return total <= 0 ? '0%' : Math.round((num / total) * 10000) / 100.0 + '%'
+}
+
+export function notify (msg, success) {
+  if (success) {
+    Notify({
+      type: 'success',
+      message: msg
+    })
+  } else {
+    Notify({
+      type: 'danger',
+      message: msg
+    })
+  }
 }

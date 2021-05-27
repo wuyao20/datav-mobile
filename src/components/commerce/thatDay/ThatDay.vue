@@ -13,6 +13,7 @@
       highlight-current-row
       style="width: 100%; margin-bottom: 20px;"
       :default-sort="{prop: 'conversionRate', order: 'descending'}"
+      size="mini"
     >
       <el-table-column label="区县" align="center" width="70">
         <template slot-scope="scope">
