@@ -71,7 +71,7 @@ const actions = {
 
         if (!obj) {
           // eslint-disable-next-line prefer-promise-reject-errors
-          reject('Verification failed, please Login again.')
+          reject('登录失败，请重新登录。。。')
         }
         // roles must be a non-empty array
         // if (!roles || roles.length <= 0) {
