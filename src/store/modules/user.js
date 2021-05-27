@@ -50,6 +50,7 @@ const actions = {
           // commit('SET_PHONE', obj.userPhone)
           setToken(obj.userUuid)
         } else {
+          // TODO:修改登录提示信息
           this.$notify.error({
             title: '登录失败',
             message: msg
