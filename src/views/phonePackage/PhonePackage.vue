@@ -48,85 +48,21 @@ export default {
     calcCommission (item) {
       switch (item.productName) {
         case '畅爽冰激凌5G套餐129元':
-          if (item.hbCount === 1) {
-            return 1 * 645
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 774 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 903 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 645, 774, 903)
         case '畅爽冰激凌5G套餐159元-优化版':
-          if (item.hbCount === 1) {
-            return 1 * 795
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 954 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 1113 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 795, 954, 1113)
         case '畅爽冰激凌5G套餐199元（极速）':
-          if (item.hbCount === 1) {
-            return 1 * 995
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 1194 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 1393 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 995, 1194, 1393)
         case '畅爽冰激凌5G套餐239元':
-          if (item.hbCount === 1) {
-            return 1 * 1195
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 1434 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 1673 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 1195, 1434, 1637)
         case '智慧沃家5G极享三千兆套餐-239元档':
-          if (item.hbCount === 1) {
-            return 1 * 1195
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 1434 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 1673 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 1195, 1434, 1673)
         case '畅爽冰激凌5G套餐299元':
-          if (item.hbCount === 1) {
-            return 1 * 1495
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 1794 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 2093 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 1495, 1794, 2093)
         case '5G畅爽冰激凌套餐399元':
-          if (item.hbCount === 1) {
-            return 1 * 1795
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 2094 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 2393 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 1795, 2094, 2393)
         case '畅爽冰激凌5G套餐999元':
-          if (item.hbCount === 1) {
-            return 1 * 3595
-          } else if (item.hbCount >= 2 && item.hbCount <= 5) {
-            return 3894 * item.hbCount
-          } else if (item.hbCount >= 6) {
-            return 4193 * item.hbCount
-          } else {
-            return 0
-          }
+          return calcCommission(item.hbCount, 3595, 3894, 4193)
       }
     },
     calcNOCommission (item) {

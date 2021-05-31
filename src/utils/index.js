@@ -15,9 +15,9 @@ export function calcCommission (num, num1, num2, num3) {
   if (num === 1) {
     return 1 * num1
   } else if (num >= 2 && num <= 5) {
-    return 2094 * num2
+    return num * num2
   } else if (num >= 6) {
-    return 2393 * num3
+    return num * num3
   } else {
     return 0
   }
