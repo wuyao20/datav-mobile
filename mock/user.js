@@ -331,10 +331,62 @@ module.exports = [
           roleId: 2,
           roleUuid: 'adebe9a080b811eb995dfcb3bc93041c',
           roleName: '管理员',
-          roleContent: 'admin|用户增加|用户删除|用户更新|单用户查询|用户列表|角色增加|角色删除|角色更新|单角色查询|角色列表|部门增加|部门删除|部门更新|单部门查询|部门列表|任务增加|任务删除|任务更新|单权限查询|权限列表|订单整体情况|整体质态情况',
+          roleContent: 'admin|用户增加|用户删除|用户更新|单用户查询|用户列表|角色增加|角色删除|角色更新|单角色查询|角色列表|部门增加|部门删除|部门更新|单部门查询|部门列表|任务增加|任务删除|任务更新|单权限查询|权限列表|订单整体情况|配送人员管理|整体质态情况|门店映射增加|门店映射删除|门店映射更改|单门店映射查询|门店映射列表|自营指标增加|自营指标删除|自营指标更改|自营指标查询|自营整体发展报表|自营锁定指标组|非活明细下载|非活明细下载列表|vip3|活动文件文件上传|条线增加|条线删除|条线更改|单条线查询|条线列表|5G|5G登网',
           createTime: '2021-03-09',
           updateTime: '2021-04-19'
         }
+      }
+    }
+  },
+  {
+    url: '/tempActive/highMeal/commission',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '成功',
+        success: true,
+        obj: [
+          {
+            productName: '畅爽冰激凌5G套餐129元',
+            hbCount: 465,
+            dkCount: 4
+          },
+          {
+            productName: '5G畅爽冰激凌套餐399元',
+            hbCount: 1,
+            dkCount: 0
+          },
+          {
+            productName: '畅爽冰激凌5G套餐199元（极速）',
+            hbCount: 38,
+            dkCount: 2
+          },
+          {
+            productName: '畅爽冰激凌5G套餐159元-优化版',
+            hbCount: 16,
+            dkCount: 1
+          },
+          {
+            productName: '畅爽冰激凌5G套餐299元',
+            hbCount: 0,
+            dkCount: 2
+          },
+          {
+            productName: '智慧沃家5G极享三千兆套餐-239元档',
+            hbCount: 7,
+            dkCount: 12
+          },
+          {
+            productName: '畅爽冰激凌5G套餐239元',
+            hbCount: 4,
+            dkCount: 0
+          },
+          {
+            productName: '畅爽冰激凌5G套餐999元',
+            hbCount: 0,
+            dkCount: 1
+          }
+        ]
       }
     }
   }

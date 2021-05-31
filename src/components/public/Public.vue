@@ -38,6 +38,12 @@
           5G登网
         </div>
       </van-grid-item>
+      <van-grid-item @click="phonePackagesClick">
+        <van-icon class="van-tabbar-item__icon" name="balance-o"></van-icon>
+        <div class="content">
+          高套佣金
+        </div>
+      </van-grid-item>
     </van-grid>
     <van-action-sheet v-model="publicShow" :actions="publicActions" cancel-text="取消" close-on-click-action description="公众报表" @select="onPublicActions" />
     <van-action-sheet v-model="commerceShow" :actions="commerceActions" cancel-text="取消" close-on-click-action description="电商报表" @select="onCommerceActions" />
@@ -70,25 +76,44 @@ export default {
     ])
   },
   methods: {
+    phonePackagesClick () {
+      if (this.roles.indexOf('admin') > -1) {
+        this.$router.push({ path: '/phonePackage' })
+      } else {
+        notify('您没有对应权限，无法访问', false)
+      }
+    },
     gridCommerceClick () {
-      if (this.roles.indexOf('commerce') > -1) {
+      if (this.roles.indexOf('admin') > -1) {
         this.commerceShow = true
       } else {
-        notify('您无权访问此菜单', false)
+        if (this.roles.indexOf('commerce') > -1) {
+          this.commerceShow = true
+        } else {
+          notify('您无权访问此菜单', false)
+        }
       }
     },
     fiveGenClick () {
-      if (this.roles.indexOf('5G') > -1) {
-        this.$router.push({ path: '/5g' })
+      if (this.roles.indexOf('admin') > -1) {
+        this.commerceShow = true
       } else {
-        notify('您无权访问此菜单', false)
+        if (this.roles.indexOf('5G') > -1) {
+          this.$router.push({ path: '/5g' })
+        } else {
+          notify('您无权访问此菜单', false)
+        }
       }
     },
     gridPublicClick () {
-      if (this.roles.indexOf('whole') > -1 || this.roles.indexOf('dayDev') > -1) {
-        this.publicShow = true
+      if (this.roles.indexOf('admin') > -1) {
+        this.commerceShow = true
       } else {
-        notify('您无权访问此菜单', false)
+        if (this.roles.indexOf('whole') > -1 || this.roles.indexOf('dayDev') > -1) {
+          this.publicShow = true
+        } else {
+          notify('您无权访问此菜单', false)
+        }
       }
     },
     onPublicActions (item) {

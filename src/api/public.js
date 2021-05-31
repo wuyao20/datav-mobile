@@ -129,3 +129,10 @@ export function add5G (number) {
     method: 'get'
   })
 }
+
+export function commission () {
+  return request({
+    url: '/tempActive/highMeal/commission',
+    method: 'get'
+  })
+}

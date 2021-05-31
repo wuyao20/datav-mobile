@@ -1,5 +1,6 @@
 import { login, getInfo, getMenu } from '@/api/user'
 import { getToken, setToken, removeToken } from '@/utils/auth'
+import { notify } from '@/utils'
 
 const getDefaultState = () => {
   return {
@@ -50,11 +51,7 @@ const actions = {
           // commit('SET_PHONE', obj.userPhone)
           setToken(obj.userUuid)
         } else {
-          // TODO:修改登录提示信息
-          this.$notify.error({
-            title: '登录失败',
-            message: msg
-          })
+          notify(msg, false)
         }
         resolve()
       }).catch(error => {

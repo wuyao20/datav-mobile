@@ -74,6 +74,14 @@ const routes = [
     name: '5g',
     mata: { title: '5G登网记录' },
     component: () => import('@/views/5g/5g')
+  },
+  {
+    path: '/phonePackage',
+    name: 'phonePackage',
+    meta: {
+      title: '高套佣金'
+    },
+    component: () => import('@/views/phonePackage/PhonePackage')
   }
 ]
 
