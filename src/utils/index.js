@@ -5,6 +5,24 @@
 import { Notify } from 'vant'
 
 /**
+ * @param num 办理套餐的数量
+ * @param num1 一户的佣金
+ * @param num2 2-5户的佣金
+ * @param num3 大于6户的佣金
+ * @returns {number} 佣金
+ */
+export function calcCommission (num, num1, num2, num3) {
+  if (num === 1) {
+    return 1 * num1
+  } else if (num >= 2 && num <= 5) {
+    return 2094 * num2
+  } else if (num >= 6) {
+    return 2393 * num3
+  } else {
+    return 0
+  }
+}
+/**
  * Parse the time to string
  * @param {(Object|string|number)} time
  * @param {string} cFormat
