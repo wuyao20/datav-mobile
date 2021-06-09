@@ -82,6 +82,22 @@ const routes = [
       title: '高套佣金'
     },
     component: () => import('@/views/phonePackage/PhonePackage')
+  },
+  {
+    path: '/channelPhonePackage',
+    name: 'channelPhonePackage',
+    meta: {
+      title: '渠道高套佣金明细'
+    },
+    component: () => import('@/views/phonePackage/ChannelPhonePackage')
+  },
+  {
+    path: '/password',
+    name: 'Password',
+    meta: {
+      title: '修改密码'
+    },
+    component: () => import('@/views/mine/Password')
   }
 ]
 

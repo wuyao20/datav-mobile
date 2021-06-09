@@ -339,54 +339,12 @@ module.exports = [
     }
   },
   {
-    url: '/tempActive/highMeal/commission',
-    type: 'get',
+    url: '/update/userInfo',
+    type: 'post',
     response: config => {
       return {
         msg: '成功',
-        success: true,
-        obj: [
-          {
-            productName: '畅爽冰激凌5G套餐129元',
-            hbCount: 465,
-            dkCount: 4
-          },
-          {
-            productName: '5G畅爽冰激凌套餐399元',
-            hbCount: 1,
-            dkCount: 0
-          },
-          {
-            productName: '畅爽冰激凌5G套餐199元（极速）',
-            hbCount: 38,
-            dkCount: 2
-          },
-          {
-            productName: '畅爽冰激凌5G套餐159元-优化版',
-            hbCount: 16,
-            dkCount: 1
-          },
-          {
-            productName: '畅爽冰激凌5G套餐299元',
-            hbCount: 0,
-            dkCount: 2
-          },
-          {
-            productName: '智慧沃家5G极享三千兆套餐-239元档',
-            hbCount: 7,
-            dkCount: 12
-          },
-          {
-            productName: '畅爽冰激凌5G套餐239元',
-            hbCount: 4,
-            dkCount: 0
-          },
-          {
-            productName: '畅爽冰激凌5G套餐999元',
-            hbCount: 0,
-            dkCount: 1
-          }
-        ]
+        success: true
       }
     }
   }

@@ -23,7 +23,7 @@ router.beforeEach(async (to, from, next) => {
   if (hasToken) {
     if (to.path === '/login') {
       // if is logged in, redirect to the home page
-      next({ path: '/home' })
+      next({ path: '/home', replace: true })
       NProgress.done()
     } else {
       // determine whether the user has obtained his permission roles through getInfo
@@ -44,7 +44,8 @@ router.beforeEach(async (to, from, next) => {
           // router.addRoutes(accessRoutes)
           // hack method to ensure that addRoutes is complete
           // set the replace: true, so the navigation will not leave a history record
-          roles.length > 0 ? next({ path: '/home', replace: true }) : next(`/login?redirect=${to.path}`)
+          // roles.length > 0 ? next({ path: '/home/public', replace: true }) : next(`/login?redirect=${to.path}`)
+          roles.length > 0 ? next({ path: '/home', replace: true }) : next('/login')
           // next({ path: '/', replace: true })
         } catch (error) {
           // remove token and go to login page to re-login

@@ -4914,5 +4914,155 @@ module.exports = [
         success: true
       }
     }
+  },
+  {
+    url: '/tempActive/highMeal/commission',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '成功',
+        success: true,
+        obj: [
+          {
+            productName: '畅爽冰激凌5G套餐129元',
+            hbCount: '1',
+            hbT0: '40',
+            hbT1: '421.3',
+            hbT3: '183.7',
+            dkCount: '0',
+            dkT0: '40',
+            dkT1: '396.3',
+            dkT3: '183.7'
+          },
+          {
+            productName: '智慧沃家5G极享三千兆套餐-239元档',
+            hbCount: '0',
+            hbT0: '40',
+            hbT1: '718.3',
+            hbT3: '436.7',
+            dkCount: '1',
+            dkT0: '40',
+            dkT1: '693.3',
+            dkT3: '436.7'
+          }
+        ]
+      }
+    }
+  },
+  {
+    url: '/tempActive/highMeal/channelManage',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '11',
+        success: true,
+        obj: [
+          {
+            channelName: '徐州市铜山区汉王镇郝辉营业厅',
+            telNum: '123123',
+            gtCount: '12',
+            hbCount129: '1',
+            hbCount159: '0',
+            hbCount199: '0',
+            hbCount239: '0',
+            hbCount299: '0',
+            hbCount399: '0',
+            hbCount599: '0',
+            hbCount799: '0',
+            hbCount999: '0',
+            dkCount129: '0',
+            dkCount159: '0',
+            dkCount199: '0',
+            dkCount239: '0',
+            dkCount299: '0',
+            dkCount399: '0',
+            dkCount599: '0',
+            dkCount799: '0',
+            dkCount999: '0'
+          },
+          {
+            channelName: '铜山区宇威鑫商贸行（金融）',
+            telNum: '123123',
+            gtCount: '170',
+            hbCount129: '170',
+            hbCount159: '0',
+            hbCount199: '0',
+            hbCount239: '0',
+            hbCount299: '0',
+            hbCount399: '0',
+            hbCount599: '0',
+            hbCount799: '0',
+            hbCount999: '0',
+            dkCount129: '0',
+            dkCount159: '0',
+            dkCount199: '0',
+            dkCount239: '0',
+            dkCount299: '0',
+            dkCount399: '0',
+            dkCount599: '0',
+            dkCount799: '0',
+            dkCount999: '0'
+          }
+        ]
+      }
+    }
+  },
+  {
+    url: '/tempActive/highMeal/channelList',
+    type: 'get',
+    response: config => {
+      return {
+        msg: '11',
+        success: true,
+        obj: [
+          {
+            channelName: '徐州市铜山区汉王镇郝辉营业厅',
+            telNum: '123123',
+            gtCount: '12',
+            hbCount129: '1',
+            hbCount159: '0',
+            hbCount199: '0',
+            hbCount239: '0',
+            hbCount299: '0',
+            hbCount399: '0',
+            hbCount599: '0',
+            hbCount799: '0',
+            hbCount999: '0',
+            dkCount129: '0',
+            dkCount159: '0',
+            dkCount199: '0',
+            dkCount239: '0',
+            dkCount299: '0',
+            dkCount399: '0',
+            dkCount599: '0',
+            dkCount799: '0',
+            dkCount999: '0'
+          },
+          {
+            channelName: '铜山区宇威鑫商贸行（金融）',
+            telNum: '123123',
+            gtCount: '170',
+            hbCount129: '170',
+            hbCount159: '0',
+            hbCount199: '0',
+            hbCount239: '0',
+            hbCount299: '0',
+            hbCount399: '0',
+            hbCount599: '0',
+            hbCount799: '0',
+            hbCount999: '0',
+            dkCount129: '0',
+            dkCount159: '0',
+            dkCount199: '0',
+            dkCount239: '0',
+            dkCount299: '0',
+            dkCount399: '0',
+            dkCount599: '0',
+            dkCount799: '0',
+            dkCount999: '0'
+          }
+        ]
+      }
+    }
   }
 ]

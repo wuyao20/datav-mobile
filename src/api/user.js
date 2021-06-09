@@ -59,3 +59,11 @@ export function getMenu () {
     method: 'get'
   })
 }
+
+export function updatePassword (data) {
+  return request({
+    url: '/update/userInfo',
+    method: 'post',
+    data
+  })
+}

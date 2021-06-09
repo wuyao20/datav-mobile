@@ -18,7 +18,8 @@ export default {
     return {
       show: false,
       actions: [
-        { name: '登出', key: 1 }
+        { name: '登出', key: 1 },
+        { name: '修改密码', key: 2 }
       ]
     }
   },
@@ -29,7 +30,6 @@ export default {
       'area',
       'grid',
       'phone'
-      // ...
     ])
   },
   methods: {
@@ -37,9 +37,18 @@ export default {
       this.show = true
     },
     onSelect (item) {
-      item.key === 1 ? this.$store.dispatch('user/logout').then(res => {
-        this.$router.push({ path: '/login' })
-      }) : this.show = false
+      switch (item.key) {
+        case 1:
+          this.$store.dispatch('user/logout').then(res => {
+            this.$router.push({ path: '/login' })
+          })
+          break
+        case 2:
+          this.$router.push({ path: '/password' })
+          break
+        default:
+          this.show = false
+      }
     }
   }
 }

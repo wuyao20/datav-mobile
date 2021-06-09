@@ -136,3 +136,17 @@ export function commission () {
     method: 'get'
   })
 }
+
+export function channelCommission () {
+  return request({
+    url: '/tempActive/highMeal/channelManage',
+    method: 'get'
+  })
+}
+
+export function ChannelCommissionDetail (telNum) {
+  return request({
+    url: `/tempActive/highMeal/channelList/${telNum}`,
+    method: 'get'
+  })
+}

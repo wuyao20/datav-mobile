@@ -79,6 +79,8 @@ export default {
     phonePackagesClick () {
       if (this.roles.indexOf('admin') > -1) {
         this.$router.push({ path: '/phonePackage' })
+      } else if (this.roles.indexOf('commission') > -1) {
+        this.$router.push({ path: '/phonePackage' })
       } else {
         notify('您没有对应权限，无法访问', false)
       }
@@ -96,7 +98,7 @@ export default {
     },
     fiveGenClick () {
       if (this.roles.indexOf('admin') > -1) {
-        this.commerceShow = true
+        this.$router.push({ path: '/5g' })
       } else {
         if (this.roles.indexOf('5G') > -1) {
           this.$router.push({ path: '/5g' })
@@ -107,7 +109,7 @@ export default {
     },
     gridPublicClick () {
       if (this.roles.indexOf('admin') > -1) {
-        this.commerceShow = true
+        this.publicShow = true
       } else {
         if (this.roles.indexOf('whole') > -1 || this.roles.indexOf('dayDev') > -1) {
           this.publicShow = true

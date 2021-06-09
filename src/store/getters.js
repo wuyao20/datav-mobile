@@ -5,6 +5,8 @@ const getters = {
   roles: state => state.user.roles,
   area: state => state.user.area,
   grid: state => state.user.gird,
-  phone: state => state.user.phone
+  phone: state => state.user.phone,
+  jobNum: state => state.user.jobNum,
+  uuid: state => state.user.uuid
 }
 export default getters

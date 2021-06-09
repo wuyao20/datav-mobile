@@ -4,7 +4,7 @@ import { notify } from '@/utils'
 
 const getDefaultState = () => {
   return {
-    token: getToken(),
+    token: '',
     name: '',
     avatar: '',
     roles: []
@@ -34,6 +34,9 @@ const mutations = {
   },
   SET_AREA: (state, area) => {
     state.area = area
+  },
+  SET_jobNumber: (state, jobNum) => {
+    state.jobNum = jobNum
   }
 }
 
@@ -79,6 +82,8 @@ const actions = {
         commit('SET_PHONE', obj.userPhone)
         commit('SET_AREA', obj.userArea)
         commit('SET_GRID', obj.userGrid)
+        commit('SET_UUID', obj.userUuid)
+        commit('SET_jobNumber', obj.userJobNumber)
         getMenu().then(res => {
           const { obj } = res
           const roleArray = obj.roleContent.split('|')
